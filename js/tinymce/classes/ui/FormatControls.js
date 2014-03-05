@@ -228,6 +228,7 @@ define("tinymce/ui/FormatControls", [
 					{title: 'Strikethrough', icon: 'strikethrough', format: 'strikethrough'},
 					{title: 'Superscript', icon: 'superscript', format: 'superscript'},
 					{title: 'Subscript', icon: 'subscript', format: 'subscript'},
+					{title: 'Quote', icon: 'quote', format: 'quote'},
 					{title: 'Code', icon: 'code', format: 'code'}
 				]},
 
@@ -344,7 +345,8 @@ define("tinymce/ui/FormatControls", [
 			underline: 'Underline',
 			strikethrough: 'Strikethrough',
 			subscript: 'Subscript',
-			superscript: 'Superscript'
+			superscript: 'Superscript',
+			quote: 'Quote'
 		}, function(text, name) {
 			editor.addButton(name, {
 				tooltip: text,
@@ -513,6 +515,7 @@ define("tinymce/ui/FormatControls", [
 			strikethrough: ['Strikethrough', 'Strikethrough'],
 			subscript: ['Subscript', 'Subscript'],
 			superscript: ['Superscript', 'Superscript'],
+			quote: ['Quote', 'Quote'],
 			removeformat: ['Clear formatting', 'RemoveFormat']
 		}, function(item, name) {
 			editor.addMenuItem(name, {

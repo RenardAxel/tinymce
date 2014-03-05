@@ -19,12 +19,12 @@ tinymce.ThemeManager.add('modern', function(editor) {
 		edit: {title: 'Edit', items: 'undo redo | cut copy paste pastetext | selectall'},
 		insert: {title: 'Insert', items: '|'},
 		view: {title: 'View', items: 'visualaid |'},
-		format: {title: 'Format', items: 'bold italic underline strikethrough superscript subscript | formats | removeformat'},
+		format: {title: 'Format', items: 'bold italic underline strikethrough superscript subscript quote | formats | removeformat'},
 		table: {title: 'Table'},
 		tools: {title: 'Tools'}
 	};
 
-	var defaultToolbar = "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | " +
+	var defaultToolbar = "undo redo | styleselect | bold italic quote | alignleft aligncenter alignright alignjustify | " +
 		"bullist numlist outdent indent | link image";
 
 	/**

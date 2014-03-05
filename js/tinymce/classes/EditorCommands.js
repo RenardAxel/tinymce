@@ -238,7 +238,7 @@ define("tinymce/EditorCommands", [
 			},
 
 			// Override commands to use the text formatter engine
-			'Bold,Italic,Underline,Strikethrough,Superscript,Subscript': function(command) {
+			'Bold,Italic,Underline,Strikethrough,Superscript,Subscript,Quote': function(command) {
 				toggleFormat(command);
 			},
 
@@ -651,7 +651,7 @@ define("tinymce/EditorCommands", [
 				return inArray(matches, TRUE) !== -1;
 			},
 
-			'Bold,Italic,Underline,Strikethrough,Superscript,Subscript': function(command) {
+			'Bold,Italic,Underline,Strikethrough,Superscript,Subscript,Quote': function(command) {
 				return isFormatMatch(command);
 			},
 

@@ -100,6 +100,9 @@ define("tinymce/Formatter", [
 					{inline: 'span', styles: {fontWeight: 'bold'}},
 					{inline: 'b', remove: 'all'}
 				],
+				quote: [
+					{inline: 'q', remove: 'all'}
+				],
 
 				italic: [
 					{inline: 'em', remove: 'all'},
